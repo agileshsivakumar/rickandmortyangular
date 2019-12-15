@@ -1,0 +1,33 @@
+<div class="col-sm">
+  <div class="text-md-left text-center">
+    <img src="{{ rickMorty.image }}" alt="Rick and Morty characters placeholder image" />
+  </div>
+  <div class="text-md-left text-center">
+    <h5>{{ rickMorty.name }}</h5>
+    <small class="text-muted">Id: {{ rickMorty.id }} - created: {{ getDateYear(rickMorty.created) }}</small>
+    <table class="table table-dark">
+      <tbody>
+        <tr>
+          <td class="text-left">STATUS</td>
+          <td class="text-right">{{ rickMorty.status }}</td>
+        </tr>
+        <tr>
+          <td class="text-left">SPECIES</td>
+          <td class="text-right">{{ rickMorty.species }}</td>
+        </tr>
+        <tr>
+          <td class="text-left">GENDER</td>
+          <td class="text-right">{{ rickMorty.gender }}</td>
+        </tr>
+        <tr>
+          <td class="text-left">ORIGIN</td>
+          <td class="text-right">{{ rickMorty.origin.name }}</td>
+        </tr>
+        <tr>
+          <td class="text-left">LAST LOCATION</td>
+          <td class="text-right">{{ rickMorty.location.name }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
